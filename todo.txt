@@ -1,0 +1,28 @@
+minimum spanning tree
+
+
+functionalities:
+  click to crete a dot
+  live creation of mst
+
+
+steps:
+
+intialise every dot as unvisited                    #
+add first dot in visited                            #
+remove first dot from unvisited                     #
+  
+while(unvisited is empty)                           #
+    min_dist=10000000;                              #
+    check every visited dot                         #
+       with every unvisited dot                     #
+                       
+           if dist(visited, unvisited)< min_dist    #
+             min_dist= dist(visited, unvisited)     #
+             visited_index=visited;                 #
+             unvisited_index=unvisited;             #
+
+
+    line( visited_index,unvisited_index)            #
+    add unvisited dot in visited                    #
+    remove unvisited dot from unvisited             #
